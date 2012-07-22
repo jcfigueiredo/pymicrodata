@@ -61,7 +61,8 @@ from rdflib	import URIRef
 from rdflib	import Literal
 from rdflib	import BNode
 from rdflib	import Namespace
-if rdflib.__version__[0] >= 3:
+#unsafe for versions greater than 9 
+if int(rdflib.__version__[0]) >= 3:
 	from rdflib	import RDF  as ns_rdf
 	from rdflib	import RDFS as ns_rdfs
 else :
