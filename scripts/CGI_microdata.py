@@ -1,4 +1,4 @@
-#!/usr/bin/python2.5
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # Maintainer: Ivan Herman <ivan@w3.org>
 
