@@ -19,11 +19,8 @@ $Id: graph.py,v 1.1 2012/04/02 16:16:27 ivan Exp $ $Date: 2012/04/02 16:16:27 $
 """
 
 import rdflib
-if rdflib.__version__ >= "3.0.0" :
-	from rdflib	import Graph
-else :
-	from rdflib.Graph import Graph
-from rdflib	import Namespace
+
+from pyMicrodata.references import Graph
 
 _xml_serializer_name	= "my-rdfxml"
 _turtle_serializer_name	= "my-turtle"

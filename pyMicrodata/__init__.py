@@ -48,7 +48,7 @@ $Id: __init__.py,v 1.13 2012/04/02 16:16:27 ivan Exp $ $Date: 2012/04/02 16:16:2
 
 """
 
-__version__ = "1.0"
+__version__ = "1.1.1"
 __author__  = 'Ivan Herman'
 __contact__ = 'Ivan Herman, ivan@w3.org'
 __license__ = u'W3C® SOFTWARE NOTICE AND LICENSE, http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231'
@@ -62,15 +62,10 @@ from rdflib	import URIRef
 from rdflib	import Literal
 from rdflib	import BNode
 from rdflib	import Namespace
-#unsafe for versions greater than 9 
-if int(rdflib.__version__[0]) >= 3:
-	from rdflib	import RDF  as ns_rdf
-	from rdflib	import RDFS as ns_rdfs
-else :
-	from rdflib.RDFS	import RDFSNS as ns_rdfs
-	from rdflib.RDF		import RDFNS  as ns_rdf
 
 import urlparse
+
+from pyMicrodata.references import ns_rdfs, ns_rdf
 
 from pyMicrodata.graph import MyGraph as Graph
 
