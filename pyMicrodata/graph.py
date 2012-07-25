@@ -12,6 +12,7 @@ U{W3C® SOFTWARE NOTICE AND LICENSE<href="http://www.w3.org/Consortium/Legal/200
 
 @var _bindings: Default bindings. This is just for the beauty of things: bindings are added to the graph to make the output nicer. If this is not done, RDFlib defines prefixes like "_1:", "_2:" which is, though correct, ugly…
 """
+from rdflib import Namespace
 
 """
 $Id: graph.py,v 1.1 2012/04/02 16:16:27 ivan Exp $ $Date: 2012/04/02 16:16:27 $
