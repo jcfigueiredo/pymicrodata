@@ -2,3 +2,4 @@
 build/
 dist/
 pyMicrodata.egg-info/
+.idea/
